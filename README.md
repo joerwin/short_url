@@ -27,20 +27,21 @@ By installing vagrant with the vagrant-aws plugin and setting your custom values
 
 Usage:
 ---------------------
-Create a shortened URL
-	POST request to the URL with a form encoded parameter named url and the system will return the shortened URL you can use.
-	Example:
+* Create a shortened URL
+	* POST request to the URL with a form encoded parameter named url and the system will return the shortened URL you can use.
+	  * Example:
 		`curl  -X POST -d 'url=http://google.com' http://localhost/`
-	example success response:
+	  * Example success response:
 		`code: 201`
         `body: http://localhost/fg5`
-    returns a status code of 500 on any error creating the URL
+
+	  * Returns a status code of 500 on any error creating the URL
 	
-Delete a shortened URL
-	DELETE request to the shortened URL
-	Example:		
+* Delete a shortened URL
+	* DELETE request to the shortened URL
+	  * Example:		
 		`curl  -X DELETE http://localhost/fg5`
-	always returns a 204 status code and an empty body
+	  * Always returns a 204 status code and an empty body
 
 
 * * * * *
