@@ -1,0 +1,4 @@
+[global]
+server.socket_host: "0.0.0.0"
+log.access_file = "/tmp/cherryAccess.log"
+log.error_file = "/tmp/cherryError.log"
